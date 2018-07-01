@@ -1,0 +1,28 @@
+#
+# Map from an alias to the official (Energistics in most cases)
+# unit symbol.
+#
+
+#
+# Schlumberger
+#
+deg = dega
+KJ = kJ
+I/32 = in/32
+lbm/gal = lbm/galUS
+
+#
+# Other
+#
+0.1\u0020in = in/10
+ohmm = ohm.m
+g/cc = g/cm3
+g/c3 = g/cm3
+api = gAPI
+lbs = lbm
+m^3 = m3
+inch = in
+us/f = us/ft
+# f = ft  Careful. "F" is officially Fahrenhait
+.1in = in/10
+meters = m

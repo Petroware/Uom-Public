@@ -1,0 +1,24 @@
+#
+# Netbeans
+#
+nbproject/private/
+
+#
+# Eclipse
+#
+.settings/
+
+#
+# Derived content
+#
+Uom*.jar
+obj/
+objtest/
+docs/
+build/
+dist/
+
+#
+# Temporary files
+#
+*~
