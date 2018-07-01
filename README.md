@@ -40,6 +40,8 @@ Building with make requires the make module of the tools repository.
 
 ### Javadoc ###
 
+Public Javadoc: https://petroware.no/uom/javadoc/index.html
+
 Javadoc can be created locally by:
 
 ```
