@@ -13,7 +13,7 @@ UoM webpage: https://petroware.no/uom.html
 Capture the UoM code to local disk by:
 
 ```
-$ git clone https://github.org/Petroware/Uom
+$ git clone https://github.com/Petroware/Uom.git
 ```
 
 
@@ -35,12 +35,14 @@ $ make jar
 
 The UoM delivery will be the `./lib/Uom.jar` file.
 
-Building with make requires the make module of the tools reprository.
+Building with make requires the make module of the tools repository.
 
 
-### Creating Javadoc ###
+### Javadoc ###
 
-Javadoc can be created by:
+Java doc for the Uom library is available [here][https://petroware.no/uom/javadoc/index.html].
+
+Javadoc can be created locally by:
 
 ```
 $ make javadoc
@@ -52,3 +54,4 @@ Note the `./overview.html` page that becomes part of the Javadoc.
 
 Note also that there is some Javadoc configuration in `./Makefile`. The Javadoc is not
 automatically date stamped. The Javadoc date (current month) is specified in the Makefile.
+
