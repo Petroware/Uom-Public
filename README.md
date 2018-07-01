@@ -40,7 +40,7 @@ Building with make requires the make module of the tools repository.
 
 ### Javadoc ###
 
-Javadoc for the Uom library is available ![here][https://petroware.no/uom/javadoc/index.html].
+Javadoc for the Uom library is available ![here](https://petroware.no/uom/javadoc/index.html).
 
 Javadoc can be created locally by:
 
