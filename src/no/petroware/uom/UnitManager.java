@@ -649,7 +649,7 @@ public final class UnitManager
         Element deprecatedElement = XmlUtil.getChild(unitOfMeasureElement, "Deprecated");
         Element baseUnitElement = XmlUtil.getChild(unitOfMeasureElement, "BaseUnit");
         boolean isBaseUnit = baseUnitElement != null && deprecatedElement == null;
-        String quantityDescription = baseUnitElement != null ? XmlUtil.getChildValue(unitOfMeasureElement, "Description", null) : null;
+        String quantityDescription = baseUnitElement != null ? XmlUtil.getChildValue(baseUnitElement, "Description", null) : null;
 
         //
         // Identify all the quantities this unit appears in
