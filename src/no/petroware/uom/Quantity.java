@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Model a quantity (such as <em>length</em> or <em>acceleration</em>) and its
- * associated units.
+ * Model a quantity (such as <em>length</em> or <em>acceleration</em>)
+ * and its associated units.
  * <p>
  * This class is thread-safe.
  *

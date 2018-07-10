@@ -424,6 +424,7 @@ public final class UnitManager
    * @param value           Value to convert.
    * @return                Converted value, or the input value it unit symbols
    *                        are unknown.
+   * @throws IllegalArgumentException  If fromUnitSymbol or toUnitSymbol is null.
    */
   public double convert(String fromUnitSymbol, String toUnitSymbol, double value)
   {
@@ -635,7 +636,7 @@ public final class UnitManager
       Element rootElement = document.getDocumentElement();
 
       //
-      // Version
+      // UnitOfMeasure elements
       //
       Element unitDefinitionsElement = XmlUtil.getChild(rootElement, "UnitsDefinition");
       List<Element> unitOfMeasureElements = XmlUtil.findChildren(unitDefinitionsElement, "UnitOfMeasure");
