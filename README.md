@@ -5,6 +5,8 @@ measurement in order to _understand_ and present the information correctly.
 Likewise, in order to do _computations_ with scientific data it is essential
 that software is able to convert data into a common unit framework.
 
+<img hspace="100" src="https://petroware.no/images/UomBox.250.png">
+
 The Petroware UoM library is a convenient, extensible front-end to the
 [Energistics Unit of Measure](https://www.energistics.org/energistics-unit-of-measure-standard/)
 database.
@@ -17,8 +19,6 @@ to embed in any scientific software system.
 UoM is available for Java (`Uom.jar`) and .Net (`Uom.dll`).
 The library is lightweight (< 0.1MB) and self-contained; It embeds the complete
 Energistics unit database and has no external dependencies.
-
-<img hspace="100" src="https://petroware.no/images/UomBox.250.png">
 
 UoM web page: https://petroware.no/uom.html
 
