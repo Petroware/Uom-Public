@@ -3,9 +3,7 @@
 UoM is Java API convenient front-end to the Energistics
 [Unit of Measure Standard](https://www.energistics.org/energistics-unit-of-measure-standard/).
 
-<img hspace="50" src="https://petroware.no/images/UomBox.250.png">
-
-![UoM Library](https://petroware.no/images/UomBox.250.png)
+<img hspace="100" src="https://petroware.no/images/UomBox.250.png">
 
 UoM web page: https://petroware.no/uom.html
 
