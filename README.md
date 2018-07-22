@@ -1,3 +1,11 @@
+<table width="100%">
+  <tr>
+    <td style="background:linear-gradient(#39435e, #19233e);height:50px;">
+      <img style="float:right; padding:0px 30px;" src="https://petroware.no/images/petrowareLogoWhite.png" alt="Logo"/>
+    </td>
+  </tr>
+</table>
+
 # UoM - Units of measurement library
 
 When dealing with scientific data it is essential to know the units of
@@ -16,7 +24,7 @@ from more than 250 different quantities.
 The API is simple, well documented and easy to use, and the library is trivial
 to embed in any scientific software system.
 
-UoM is available for Java (<tt>Uom.jar</tt>) and .Net (<tt>Uom.dll</tt>).
+UoM is available for Java (`Uom.jar`) and .Net (`Uom.dll`).
 The library is lightweight (< 0.1MB) and self-contained; It embeds the complete
 Energistics unit database and has no external dependencies.
 
@@ -252,3 +260,24 @@ It is also possible to add units to existing quantities:
 Quantity q = unitManager.findQuantity("length");
 q.addUnit(new Unit("light year", "ly", 9.4607e15, 0.0, 0.0, 1.0), false);
 ```
+
+# Petroware
+
+Petroware AS is a software company within the data management, data analytics,
+petrophysics, geology and reservoir engineering domains.
+Petroware creates highly advanced software components and end-user products that
+acts as a research platform within software architecture and scalability, system design,
+parallelism and multi-threading, user experience (UX) and usability analysis as well
+as development methodologies and techniques.
+
+*Petroware AS*
+[https://petroware.no](https://petroware.no)
+
+
+<table width="100%">
+  <tr>
+    <td style="background:linear-gradient(#39435e, #19233e);height:50px;">
+      <img style="float:right; padding:0px 30px;" src="https://petroware.no/images/petrowareLogoWhite.png" alt="Logo"/>
+    </td>
+  </tr>
+</table>
