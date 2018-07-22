@@ -1,5 +1,3 @@
-[logo]: https://petroware.no/images/profile/Petroware_177x32.png
-
 # UoM - Units of measurement library
 
 When dealing with scientific data it is essential to know the units of
@@ -264,5 +262,5 @@ acts as a research platform within software architecture and scalability, system
 parallelism and multi-threading, user experience (UX) and usability analysis as well
 as development methodologies and techniques.
 
-**Petroware AS**
+**Petroware AS**<br>
 [https://petroware.no](https://petroware.no)
