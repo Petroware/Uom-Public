@@ -20,7 +20,7 @@ $ git clone https://github.com/Petroware/Uom.git
 ## Dependencies
 
 UoM has no external dependenies. The Energistics unit database
-(`./src/no/petroware.uom/witsmlUnitDict.xml`) is embedded in the library.
+(`./src/no/petroware/uom/witsmlUnitDict.xml`) is embedded in the library.
 
 
 ## Building UoM
@@ -118,14 +118,14 @@ either per element or as overall preference settings.
 It is essential that the application knows the initial unit of measure
 of the values involved. A common advice to reduce complexity and risk of errors
 is to keep the entire data model in _base_ units (typically
-![SI](https://en.wikipedia.org/wiki/International_System_of_Units")
+![SI](https://en.wikipedia.org/wiki/International_System_of_Units)
 or similar) and convert in GUI on users request. The associated units will then
 be _implied_, effectively making the entire business logic _unitless_.
 Conversions to and from base units can be done directly on the ``Unit`` instances:
 
 ```java
 //
-// Capture pressure display unit from GUI or prefernces
+// Capture pressure display unit from GUI or preferences
 //
 Unit diplsayUnit = ...;
 String displaySymbol = unitManager.getDisplaySymbol(diplsayUnit.getSymbol());
