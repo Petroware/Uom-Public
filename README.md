@@ -2,7 +2,7 @@
 <table width="100%">
   <tr>
     <td style="background:#19233e;height:50px;">
-      <img style="float:right;padding:0px 30px;" src="https://petroware.no/images/petrowareLogoWhite.png" alt="Logo"/>
+      Hei
     </td>
   </tr>
 </table>
