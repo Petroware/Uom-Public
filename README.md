@@ -1,10 +1,12 @@
+<p>
 <table width="100%">
   <tr>
     <td style="background:#19233e;height:50px;">
-      <img style="float:right; padding:0px 30px;" src="https://petroware.no/images/petrowareLogoWhite.png" alt="Logo"/>
+      <img style="float:right;padding:0px 30px;" src="https://petroware.no/images/petrowareLogoWhite.png" alt="Logo"/>
     </td>
   </tr>
 </table>
+</p>
 
 # UoM - Units of measurement library
 
@@ -270,5 +272,5 @@ acts as a research platform within software architecture and scalability, system
 parallelism and multi-threading, user experience (UX) and usability analysis as well
 as development methodologies and techniques.
 
-*Petroware AS*
+**Petroware AS**
 [https://petroware.no](https://petroware.no)
