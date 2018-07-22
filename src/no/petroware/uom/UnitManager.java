@@ -49,16 +49,6 @@ public final class UnitManager
   private final List<Quantity> quantities_ = new CopyOnWriteArrayList<>();
 
   /**
-   * Return the sole instance of this class.
-   *
-   * @return  The sole instance of this class. Never null.
-   */
-  public static UnitManager getInstance()
-  {
-    return instance_;
-  }
-
-  /**
    * Create a unit manager instance.
    */
   private UnitManager()
@@ -69,64 +59,13 @@ public final class UnitManager
   }
 
   /**
-   * Add specified alias to be associated with the given official
-   * unit symbol.
-   * <p>
-   * The alias will be used when identifying Unit instances
-   * from unit symbols and affects all methods of this class taking
-   * unit symbol as argument.
-   * <p>
-   * Multiple aliases can be added for each unit symbol.
+   * Return the sole instance of this class.
    *
-   * @param unitSymbolAlias  Alias to add. Non-null.
-   * @param unitSymbol       Unit symbol to associated alias with. Non-null.
-   * @throws IllegalArgumentException  If unitSymbolAlias or unitSymbol is null.
+   * @return  The sole instance of this class. Never null.
    */
-  public void addUnitAlias(String unitSymbolAlias, String unitSymbol)
+  public static UnitManager getInstance()
   {
-    if (unitSymbolAlias == null)
-      throw new IllegalArgumentException("unitSymbolAlias cannot be null");
-
-    if (unitSymbol == null)
-      throw new IllegalArgumentException("unitSymbol cannot be null");
-
-    unitAliases_.setProperty(unitSymbolAlias.toLowerCase(), unitSymbol);
-  }
-
-  /**
-   * Set the specified display symbol for the given unit symbol.
-   *
-   * @param unitSymbol     Official unit symbol. Non-null.
-   * @param displaySymbol  Associated display symbol. Non-null.
-   * @throws IllegalArgumentException  If unitSymbol or displaySymbol is null.
-   */
-  public void setDisplaySymbol(String unitSymbol, String displaySymbol)
-  {
-    if (unitSymbol == null)
-      throw new IllegalArgumentException("unitSymbol cannot be null");
-
-    if (displaySymbol == null)
-      throw new IllegalArgumentException("displaySymbol cannot be null");
-
-    displaySymbols_.setProperty(unitSymbol, displaySymbol);
-  }
-
-  /**
-   * Set the specified display symbol for the given unit.
-   *
-   * @param unit           Unit to set display symbol of. Non-null.
-   * @param displaySymbol  Associated display symbol. Non-null.
-   * @throws IllegalArgumentException  If unitSymbol or displaySymbol is null.
-   */
-  public void setDisplaySymbol(Unit unit, String displaySymbol)
-  {
-    if (unit == null)
-      throw new IllegalArgumentException("unit cannot be null");
-
-    if (displaySymbol == null)
-      throw new IllegalArgumentException("displaySymbol cannot be null");
-
-    setDisplaySymbol(unit.getSymbol(), displaySymbol);
+    return instance_;
   }
 
   /**
@@ -137,24 +76,6 @@ public final class UnitManager
   public List<Quantity> getQuantities()
   {
     return Collections.unmodifiableList(quantities_);
-  }
-
-  /**
-   * Add the specified quantity to this unit manager.
-   *
-   * @param quantity  Quantity to add. Non-null.
-   * @throws IllegalArgumentException  If quantity is null or already contained
-   *                  in this manager.
-   */
-  public void addQuantity(Quantity quantity)
-  {
-    if (quantity == null)
-      throw new IllegalArgumentException("quantity cannot be null");
-
-    if (findQuantity(quantity.getName()) != null)
-      throw new IllegalArgumentException("Quantity is already present: " + quantity.getName());
-
-    quantities_.add(quantity);
   }
 
   /**
@@ -175,6 +96,24 @@ public final class UnitManager
     }
 
     return  null;
+  }
+
+  /**
+   * Add the specified quantity to this unit manager.
+   *
+   * @param quantity  Quantity to add. Non-null.
+   * @throws IllegalArgumentException  If quantity is null or already contained
+   *                  in this manager.
+   */
+  public void addQuantity(Quantity quantity)
+  {
+    if (quantity == null)
+      throw new IllegalArgumentException("quantity cannot be null");
+
+    if (findQuantity(quantity.getName()) != null)
+      throw new IllegalArgumentException("Quantity is already present: " + quantity.getName());
+
+    quantities_.add(quantity);
   }
 
   /**
@@ -537,13 +476,50 @@ public final class UnitManager
   /**
    * Return the display symbol for the given unit.
    *
-   * @param unitSymbol  Unit symbol of the unit to get display symbol of. Non-null.
+   * @param unitSymbol  Unit symbol of the unit to get display symbol of.
+   *                    Null if unitless.
    * @return            Display symbol of specified unit. Null if unitless.
    */
   public String getDisplaySymbol(String unitSymbol)
   {
     Unit unit = findUnit(unitSymbol);
     return unit != null ? getDisplaySymbol(unit) : unitSymbol;
+  }
+
+  /**
+   * Set the specified display symbol for the given unit symbol.
+   *
+   * @param unitSymbol     Official unit symbol. Non-null.
+   * @param displaySymbol  Associated display symbol. Non-null.
+   * @throws IllegalArgumentException  If unitSymbol or displaySymbol is null.
+   */
+  public void setDisplaySymbol(String unitSymbol, String displaySymbol)
+  {
+    if (unitSymbol == null)
+      throw new IllegalArgumentException("unitSymbol cannot be null");
+
+    if (displaySymbol == null)
+      throw new IllegalArgumentException("displaySymbol cannot be null");
+
+    displaySymbols_.setProperty(unitSymbol, displaySymbol);
+  }
+
+  /**
+   * Set the specified display symbol for the given unit.
+   *
+   * @param unit           Unit to set display symbol of. Non-null.
+   * @param displaySymbol  Associated display symbol. Non-null.
+   * @throws IllegalArgumentException  If unitSymbol or displaySymbol is null.
+   */
+  public void setDisplaySymbol(Unit unit, String displaySymbol)
+  {
+    if (unit == null)
+      throw new IllegalArgumentException("unit cannot be null");
+
+    if (displaySymbol == null)
+      throw new IllegalArgumentException("displaySymbol cannot be null");
+
+    setDisplaySymbol(unit.getSymbol(), displaySymbol);
   }
 
   /**
@@ -565,6 +541,31 @@ public final class UnitManager
     }
 
     return quantity;
+  }
+
+  /**
+   * Add specified alias to be associated with the given official
+   * unit symbol.
+   * <p>
+   * The alias will be used when identifying Unit instances
+   * from unit symbols and affects all methods of this class taking
+   * unit symbol as argument.
+   * <p>
+   * Multiple aliases can be added for each unit symbol.
+   *
+   * @param unitSymbolAlias  Alias to add. Non-null.
+   * @param unitSymbol       Unit symbol to associated alias with. Non-null.
+   * @throws IllegalArgumentException  If unitSymbolAlias or unitSymbol is null.
+   */
+  public void addUnitAlias(String unitSymbolAlias, String unitSymbol)
+  {
+    if (unitSymbolAlias == null)
+      throw new IllegalArgumentException("unitSymbolAlias cannot be null");
+
+    if (unitSymbol == null)
+      throw new IllegalArgumentException("unitSymbol cannot be null");
+
+    unitAliases_.setProperty(unitSymbolAlias.toLowerCase(), unitSymbol);
   }
 
   /**

@@ -40,8 +40,8 @@ final class XmlUtil
    * @param inputStream  Input stream to create document from. Non-null.
    * @return             The requested document. Never null.
    * @throws IllegalArgumentException  If inputStream is null.
-   * @throws IOException   If the fail cannot be accessed for some reason.
-   * @throws SAXException  If the file doesn't contain a proper XML document.
+   * @throws IOException   If the input stream cannot be accessed for some reason.
+   * @throws SAXException  If the input stream doesn't contain a proper XML document.
    */
   public static Document newDocument(InputStream inputStream)
     throws IOException, SAXException
