@@ -16,7 +16,7 @@ from more than 250 different quantities.
 The API is simple, well documented and easy to use, and the library is trivial
 to embed in any scientific software system.
 
-UoM is available for Java (`Uom.jar`) and .Net (`Uom.dll`).
+UoM is available for Java (<tt>Uom.jar</tt>) and .Net (<tt>Uom.dll</tt>).
 The library is lightweight (< 0.1MB) and self-contained; It embeds the complete
 Energistics unit database and has no external dependencies.
 
