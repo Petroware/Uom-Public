@@ -7,6 +7,8 @@ UoM is Java API convenient front-end to the Energistics
   <img src="https://petroware.no/images/UomBox.250.png00">
 </p>
 
+![UoM Library](https://petroware.no/images/UomBox.250.png)
+
 UoM web page: https://petroware.no/uom.html
 
 
