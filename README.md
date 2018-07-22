@@ -118,7 +118,7 @@ either per element or as overall preference settings.
 It is essential that the application knows the initial unit of measure
 of the values involved. A common advice to reduce complexity and risk of errors
 is to keep the entire data model in _base_ units (typically
-![SI](https://en.wikipedia.org/wiki/International_System_of_Units)
+[SI](https://en.wikipedia.org/wiki/International_System_of_Units)
 or similar) and convert in GUI on users request. The associated units will then
 be _implied_, effectively making the entire business logic _unitless_.
 Conversions to and from base units can be done directly on the ``Unit`` instances:
