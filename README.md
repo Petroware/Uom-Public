@@ -1,6 +1,6 @@
 <table width="100%">
   <tr>
-    <td style="background:linear-gradient(#39435e, #19233e);height:50px;">
+    <td style="background:#19233e;height:50px;">
       <img style="float:right; padding:0px 30px;" src="https://petroware.no/images/petrowareLogoWhite.png" alt="Logo"/>
     </td>
   </tr>
@@ -261,7 +261,7 @@ Quantity q = unitManager.findQuantity("length");
 q.addUnit(new Unit("light year", "ly", 9.4607e15, 0.0, 0.0, 1.0), false);
 ```
 
-# Petroware
+# About Petroware
 
 Petroware AS is a software company within the data management, data analytics,
 petrophysics, geology and reservoir engineering domains.
@@ -272,12 +272,3 @@ as development methodologies and techniques.
 
 *Petroware AS*
 [https://petroware.no](https://petroware.no)
-
-
-<table width="100%">
-  <tr>
-    <td style="background:linear-gradient(#39435e, #19233e);height:50px;">
-      <img style="float:right; padding:0px 30px;" src="https://petroware.no/images/petrowareLogoWhite.png" alt="Logo"/>
-    </td>
-  </tr>
-</table>
