@@ -1,12 +1,4 @@
-<p>
-<table width="100%">
-  <tr>
-    <td style="background:#19233e;height:50px;">
-      Hei
-    </td>
-  </tr>
-</table>
-</p>
+[logo]: https://petroware.no/images/profile/Petroware_177x32.png
 
 # UoM - Units of measurement library
 
