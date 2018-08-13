@@ -263,5 +263,5 @@ parallelism and multi-threading, user experience (UX) and usability analysis as 
 as development methodologies and techniques.
 
 **Petroware AS**<br>
-[https://petroware.no](https://petroware.no)
+[https://petroware.no](https://petroware.no)<br>
 info@petroware.no
