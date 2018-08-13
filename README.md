@@ -264,3 +264,4 @@ as development methodologies and techniques.
 
 **Petroware AS**<br>
 [https://petroware.no](https://petroware.no)
+info@petroware.no
