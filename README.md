@@ -50,7 +50,7 @@ $ make jar
 
 The UoM delivery will be the `./lib/Uom.jar` file.
 
-Building with make requires the make module of the tools repository.
+Building with make requires the make module of the tools repository (not public).
 
 
 ## Javadoc
