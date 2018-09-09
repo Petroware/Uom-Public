@@ -235,6 +235,6 @@ parallelism and multi-threading, user experience (UX) and usability analysis as 
 as development methodologies and techniques.
 
 **Petroware AS**<br>
-Stavanger - Norway
+Stavanger - Norway<br>
 [https://petroware.no](https://petroware.no)<br>
 info@petroware.no
