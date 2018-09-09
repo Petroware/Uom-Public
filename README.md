@@ -228,11 +228,13 @@ q.addUnit(new Unit("light year", "ly", 9.4607e15, 0.0, 0.0, 1.0), false);
 
 Petroware AS is a software company within the data management, data analytics,
 petrophysics, geology and reservoir engineering domains.
+
 Petroware creates highly advanced software components and end-user products that
 acts as a research platform within software architecture and scalability, system design,
 parallelism and multi-threading, user experience (UX) and usability analysis as well
 as development methodologies and techniques.
 
 **Petroware AS**<br>
+Stavanger - Norway
 [https://petroware.no](https://petroware.no)<br>
 info@petroware.no
