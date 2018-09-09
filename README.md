@@ -38,38 +38,9 @@ UoM has no external dependenies. The Energistics unit database
 (`./src/no/petroware/uom/witsmlUnitDict.xml`) is embedded in the library.
 
 
-## Building UoM
-
-UoM can be built from its root folder by
-
-```
-$ make clean
-$ make
-$ make jar
-```
-
-The UoM delivery will be the `./lib/Uom.jar` file.
-
-Building with make requires the make module of the tools repository (not public).
-
-
 ## Javadoc
 
 Public Javadoc: https://petroware.no/uom/javadoc/index.html
-
-Javadoc can be created locally by:
-
-```
-$ make javadoc
-```
-
-Entry point will be `./docs/index.html`.
-
-Note the `./overview.html` page that becomes part of the Javadoc.
-
-Note also that there is some Javadoc configuration in `./Makefile`. The Javadoc is not
-automatically date stamped. The Javadoc date (current month) is specified in the Makefile.
-
 
 
 ## Programming examples
