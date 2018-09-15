@@ -52,7 +52,6 @@ Energistics quantities and units:
 import no.petroware.uom.Quantity;
 import no.petroware.uom.Unit;
 import no.petroware.uom.UnitManager;
-
 :
 
 //
