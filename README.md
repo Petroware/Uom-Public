@@ -40,9 +40,9 @@ UoM has no external dependenies. The Energistics unit database
 
 ## API Documentation
 
-Javadoc: https://petroware.no/uom/javadoc/index.html
+Java: https://petroware.no/uom/javadoc/index.html
 
-Doxygen: https://petroware.no/uom/doxygen/index.html
+MS/.Net: https://petroware.no/uom/doxygen/index.html
 
 
 ## Programming examples
