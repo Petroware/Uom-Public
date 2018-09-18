@@ -38,12 +38,16 @@ UoM has no external dependenies. The Energistics unit database
 (`./src/no/petroware/uom/witsmlUnitDict.xml`) is embedded in the library.
 
 
-## Javadoc
+## API Documentation
 
-Public Javadoc: https://petroware.no/uom/javadoc/index.html
+Javadoc: https://petroware.no/uom/javadoc/index.html
+
+Doxygen: https://petroware.no/uom/doxygen/index.html
 
 
 ## Programming examples
+
+The examples below are for the Java version of UoM. The C# API is similar.
 
 The easiest way to get started with UoM is to explore the predefined
 Energistics quantities and units:
