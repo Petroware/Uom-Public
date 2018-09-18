@@ -8,7 +8,7 @@ namespace Petroware.Uom
 {
   /// <summary>
   ///   A collections of useful utilities and conveniences when working
-  ///   with the standard JDK XML package.
+  ///   with the standard .Net XML package.
   ///
   ///   This is a minimal excerpt from no.petroware.cc.util.XmlUtil.
   /// </summary>
