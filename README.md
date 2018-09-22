@@ -46,7 +46,7 @@ is embedded in the library.
 
 Java: https://petroware.no/uom/javadoc/index.html
 
-MS/.Net: https://petroware.no/uom/doxygen/index.html
+.Net: https://petroware.no/uom/doxygen/index.html
 
 
 ## Programming examples
