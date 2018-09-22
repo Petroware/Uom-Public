@@ -31,11 +31,15 @@ Capture the UoM code to local disk by:
 $ git clone https://github.com/Petroware/Uom.git
 ```
 
+The Java code is in the `src` tree, while the C# code is in the `Petroware` tree.
+The compiled libraries are in the `lib` folder.
+
 
 ## Dependencies
 
 UoM has no external dependenies. The Energistics unit database
-(`./src/no/petroware/uom/witsmlUnitDict.xml`) is embedded in the library.
+(`./src/no/petroware/uom/witsmlUnitDict.xml` and `./Petroware/LogIo/Uom/witsmlUnitDict.xml`)
+is embedded in the library.
 
 
 ## API Documentation
