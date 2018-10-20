@@ -9,8 +9,14 @@ nbproject/private/
 .settings/
 
 #
+# Visual Studio
+#
+.vs/
+
+#
 # Derived content
 #
+bin/
 obj/
 objtest/
 docs/
