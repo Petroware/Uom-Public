@@ -231,7 +231,7 @@ Quantity q = unitManager.findQuantity("length");
 q.addUnit(new Unit("light year", "ly", 9.4607e15, 0.0, 0.0, 1.0), false);
 ```
 
-# About Petroware
+## About Petroware
 
 Petroware AS is a software company within the data management, data analytics,
 petrophysics, geology and reservoir engineering domains.
