@@ -20,7 +20,7 @@ UoM is available for Java (`Uom.jar`) and .Net (`Uom.dll`).
 The library is lightweight (< 0.1MB) and self-contained; It embeds the complete
 Energistics unit database and has no external dependencies.
 
-UoM web page: https://petroware.no/uom.html
+UoM web page: https://petroware.no/html/uom.html
 
 
 ## Setup
@@ -44,9 +44,9 @@ is embedded in the library.
 
 ## API Documentation
 
-Java: https://petroware.no/uom/javadoc/index.html
+Java: https://petroware.no/products/uom/javadoc/index.html
 
-.Net: https://petroware.no/uom/doxygen/index.html
+.Net: https://petroware.no/products/uom/doxygen/index.html
 
 
 ## Programming examples
